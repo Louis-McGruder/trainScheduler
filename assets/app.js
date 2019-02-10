@@ -44,26 +44,26 @@ $("#save-details").on("click", function (event)
   });
 });
 
-// database.ref().on("value", function(snapshot) {
+database.ref().on("value", function(snapshot) {
 
-//   // Print the initial data to the console.
-//   console.log(snapshot.val());
+  // Print the initial data to the console.
+  console.log(snapshot.val());
 
 //   // Log the value of the various properties
-//   console.log(snapshot.val().trainName);
-//   console.log(snapshot.val().destination);
-//   console.log(snapshot.val().firstTrain);
-//   console.log(snapshot.val().frequency);
+  console.log(snapshot.val().trainName);
+  console.log(snapshot.val().destination);
+  console.log(snapshot.val().firstTrain);
+  console.log(snapshot.val().frequency);
 
 //   // Change the HTML
-//   $("#displayTrain").text(snapshot.val().trainName);
-//   $("#displayDestination").text(snapshot.val().destination); 
-//   $("#displayFirstTrain").text(snapshot.val().firstTrain); 
-//   $("#displayFrequency").text(snapshot.val().frequency);  
+  $("#displayTrain").text(snapshot.val().trainName);
+  $("#displayDestination").text(snapshot.val().destination); 
+  $("#displayFirstTrain").text(snapshot.val().firstTrain); 
+  $("#displayFrequency").text(snapshot.val().frequency);  
 
 
 //   // If any errors are experienced, log them to console.
 // }, function(errorObject) {
 //   console.log("The read failed: " + errorObject.code);
-// });
+});
 
