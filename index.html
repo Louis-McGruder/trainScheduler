@@ -40,13 +40,13 @@
         <hr><br><br>
         <form>
             Train Name:<br>
-            <input type="text" name="trainName" id="trainName"><br><br>
+            <input type="text" name="trainName" id="trainName" value="Amtrak" readonly><br><br>
             Destination:<br>
-            <input type="text" name="destination" id="destination"><br><br>
-            First Train (HH:mm - military time):<br>
-            <input type="text" name="firstTrain" id="firstTrain"><br><br>
+            <input type="text" name="destination" id="destination" min="today"><br><br>
+            First Train (Date; Time HH:mm - military time):<br>
+            <input type="datetime-local" name="firstTrain" id="firstTrain"><br><br>
             Frequency (min):<br>
-            <input type="text" name="frequency" id="frequency"><br><br>
+            <input type="number" name="frequency" id="frequency"><br><br>
             <input type="submit" value="Submit" id="save-details">
         </form>
 
