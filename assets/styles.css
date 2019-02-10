@@ -1,0 +1,31 @@
+.jumbotron {
+    color: red;
+    font-style: italic;
+    border: green;
+
+}
+
+#trainOutput {
+    display: block;
+    height: 500px;
+    width: 80%;
+    border-color: black;
+}
+
+#trainInput {
+    display: block;
+    height: 500px;
+    width: 80%;
+    border-color: black;
+}
+
+input {
+    position: relative;
+    width: 80%;
+}
+
+.subtitle {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
